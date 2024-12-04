@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>watch videos</title>
+    <!--font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header class="header">
+      <section class="flex">
+        <a href="home..html" class="logo">Janjyoti Notes</a>
+
+        <form action="" method="post" class="search-form">
+          <input
+            type="text"
+            name="search_box"
+            placeholder="Search notes..."
+            required
+            maxlength="100"
+          />
+          <button
+            type="submit"
+            class="fas fa-search"
+            name="search_box"
+          ></button>
+        </form>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+        <div class="profile">
+          <img src="image.png" alt="" />
+          <h3>Anonymous</h3>
+          <span>Student</span>
+          <a href="profile.html" class="btn">View Profile</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">Login</a>
+            <a href="register.html" class="option-btn">Register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!--header section ends-->
+    <!--side bar section start-->
+
+    <div class="side-bar">
+      <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="profile">
+        <img src="image.png" alt="" />
+        <h3>Anonymous</h3>
+        <span>Student</span>
+        <a href="profile.html" class="btn">View Profile</a>
+      </div>
+      <nav class="navbar">
+        <a href="home.html"> <i class="fas fa-home"> </i> <span>Home</span> </a>
+        <a href="about.html">
+          <i class="fas fa-question"> </i> <span>About Us</span>
+        </a>
+        <a href="courses.html">
+          <i class="fas fa-graduation-cap"> </i> <span>Courses</span>
+        </a>
+        <a href="teachers.html">
+          <i class="fas fa-chalkboard-user"> </i> <span>Teachers</span>
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-headset"></i> <span>Contacts</span>
+        </a>
+      </nav>
+    </div>
+
+    <!--side bar section ends-->
+
+    <!-- watch video section starts  -->
+
+    <section class="watch-vid">
+    <div class="vid-details">
+      <video src="images/vid-1.mp4" class="video" poster="images/post-1-1.png"controls autoplay></video>
+      <h3 class="title"> HTML tutorial-part 1</h3>
+      <div class="info">
+        <p>
+          <i class="fas fa-calendar"><span>21-12-2022</span></i>
+          <i class="fas fa-heart"><span>45 likes</span></i>
+        </p>
+      </div>
+      <div class="tutor">
+        <img src="images/pic-2.jpg" alt="">
+        <div>
+          <h3>toya raj</h3>
+          <span>Developer</span>
+        </div>
+      </div>
+      <form action="" method="post" class="flex">
+        <a href="playlist.html" class="inline-btn">view playlist</a>
+        <button class="submit"><i class="far fa-heart"><span>likes</span></i>
+        </button>
+      
+      </form>
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut architecto quos quae eum itaque quia numquam magni facere vero laboriosam, iste repellat cum ipsa! Omnis fugit tempore incidunt molestias voluptas nulla quasi quam ex consequuntur iure maxime nihil, dolore iusto qui reprehenderit illo totam neque accusantium atque modi at.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum perferendis delectus illo, itaque natus.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- watch video section ends -->
+
+
+    <!-- comments section starts  -->
+<section class="comments">
+  <h1 class="heading">Add a comment</h1>
+  <form action="" method="post" class="add-comments">
+    <textarea name="commen_box" required placeholder="write your comment....." maxlength="1000" cols="30" rows="10" ></textarea>
+    <input type="submit" value="add comment" name="add_comment" class="inline-btn">
+  </form>
+  <h1 class="heading">5 comments</h1>
+  <div class="sho-comments">
+    <div class="box">
+      <div class="user">
+        <img src="images/pic-1.jpg" alt="">
+        <div>
+         <h3>toya raj</h3>
+         <span>22-11-2021</span>
+       </div>
+      </div>
+      <p class="text">This is comment from toya raj....</p>
+      <form action="" method="post" class="flex-btn"> 
+        <button type="submit" name="edit_comment" class="inline-option-btn">Edit comments</button>
+        <button type="submit" name="delete_comment" class="inline-delete-btn">Delete comments</button>
+      </form>
+    </div>
+     <div class="box">
+          <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+             <h3>shyam raj</h3>
+             <span>22-11-2021</span>
+            </div>
+       </div>
+        <p class="text">
+         Wow amazing video!
+         thanks for your source code!
+        </p>
+      </div>
+   </div>
+</section>
+
+    <!-- comments section ends  -->
+
+
+
+    <!--footer section starts-->
+    <footer class="footer">
+      &copy;copyright@2024 by <span>Janjyoti Multiple Campus</span> | all rights
+      revserved!
+    </footer>
+    <!--footer section ends-->
+
+    <!--custom cript link-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
